@@ -53,30 +53,30 @@
         //     1.3 把首页返回到前端
         //     -->
 
-        $('#signup_form').on("submit", function(e) {
-            console.log("asdasdasd");
+        // $('#signup_form').on("submit", function(e) {
+        //     console.log("asdasdasd");
 
-            e.preventDefault();
-            // serialize()序列化
-            var formdata = $('#signup_form').serialize()
-            console.log(formdata);
+        //     e.preventDefault();
+        //     // serialize()序列化
+        //     var formdata = $('#signup_form').serialize()
+        //     console.log(formdata);
 
-            $.ajax({
-                url: '/signup',
-                type: "POST",
-                data: formdata,
-                dataType: "json",
-                success: function(results) {
-                    console.log(results);
-                },
-                error: function(err) {
-                    if (err) {
-                        throw err
-                    }
-                }
-            })
+        //     $.ajax({
+        //         url: '/signup',
+        //         type: "POST",
+        //         data: formdata,
+        //         dataType: "json",
+        //         success: function(results) {
+        //             console.log(results);
+        //         },
+        //         error: function(err) {
+        //             if (err) {
+        //                 throw err
+        //             }
+        //         }
+        //     })
 
-        })
+        // })
     </script>
 </body>
 
