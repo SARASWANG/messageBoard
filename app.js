@@ -5,6 +5,9 @@ var app = express()
 var router = require('./router.js')
 
 
+// 配置express-art-template
+app.engine('html', require('express-art-template')); 
+
 // 挂载路由
 app.use(router)
  
