@@ -27,14 +27,14 @@ router
 
 // 3 话题路由
 router
-	// .get('/topic/create',)  //渲染发布话题页面
-	// .post('/topic/create',) // 处理发布话题页面
+	.get('/topic/create', topic.showCreate)  //渲染发布话题页面
+	.post('/topic/create', topic.create)    // 处理发布话题页面
 
-	// .get('/topic/:topicID',)   //渲染话题详情页面	
-	// .get('/topic/:topicID/edit',)   //渲染编辑话题页面	
+	.get('/topic/:topicID', topic.show)    //渲染话题详情页面	
+	.get('/topic/:topicID/edit', topic.showEdit)   //渲染编辑话题页面	
 
-	// .post('/topic/:topicID/edit',)  //处理编辑话题请求
-	// .post('/topic/:topicID/delete',)  //处理删除话题请求
+	.post('/topic/:topicID/edit', topic.edit)  //处理编辑话题请求
+	.post('/topic/:topicID/delete', topic.delete)  //处理删除话题请求
 
 
 // 导出路由
